@@ -20,3 +20,14 @@
 
 ## 환경설정
 1. bitnami > wampstack > php > php.ini
+https://user-images.githubusercontent.com/42515875/47993894-1dd75380-e134-11e8-986b-dceb3a8a9df6.png
+> **display_errors = On**으로 바꿔준다. 
+- 화면에 error내용이 출력되게 한다.
+- 개발환경에서는 화면에 error가 보이게 해서 개발하는 편이 수월하다.
+- attcker에게는 공격수단이 된다.
+2. php.ini에서 
+> **opcache.enable = 0**으로 바꿔준다.
+- 1 : 활성화 상태, 개발 시 내용 수정 후 30초 후에 변경이 적용된다.
+- 0 : 비활성화 상태, cash를 사용하지 않겠다는 설정, 개발 시 내용 수정이 바로 됨. 
+
+3. php.ini의 수정이 완료되었으면, manager-windows.exe를 실행해서 apache를 **restart**한다. 
