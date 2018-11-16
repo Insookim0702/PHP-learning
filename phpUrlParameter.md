@@ -22,6 +22,7 @@ param값을 2개 이상 받을 경우엔 **"&"** 을 이용한다.
 > 127.0.0.1/index.php?name=kakao&age=13
 <br>
 ![](https://user-images.githubusercontent.com/42515875/48600036-9ac4c180-e9ad-11e8-96a8-d0039eaf7be4.png)
+<br>
 ![](https://user-images.githubusercontent.com/42515875/48600219-64d40d00-e9ae-11e8-83c7-a2d362b62c12.png)
 
 ![](https://user-images.githubusercontent.com/42515875/48600034-98fafe00-e9ad-11e8-9f84-c85a504f65f2.png)
