@@ -79,6 +79,24 @@ dir클레스를 이용하거나 readdir, scandir을 이용하는 것입니다.
 
 ```
 
+<br>
+
+> file_put_content(파일명, 내용);
+
+<br>
+파일이 있으면 그 안에 내용을 넣고, 파일이 없으면 파일을 생성한다.
+
+<br>
+
+
+```
+<?php
+  file_put_content(파일명, 내용);
+?>
+```
+
+
+
 
 
 
