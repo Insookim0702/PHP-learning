@@ -33,10 +33,52 @@ Name: <input type="text" name="fname">
 </form>
 
 <?php
-$name = $_REQUEST['fname'];
-echo $name;
+if($_SERVER["REQUEST_METHOD"] =="POST"){
+  if(empty($name)){
+      echo "Name is empty";
+  } else{
+      echo $_REQUEST['fname'];
+  }
+}
 ?>
 
 </body>
 </html>
 ```
+
+### $_POST
+PHP $_POST는 HTML form이 method="post"로 제출되었을 때 form 데이터를 수집하는데 널리 사용된다.<br>
+$_POST는 또한 변수를 전달할 때도 널리 사용된다.<br>
+
+form태그를 사용하면 사용자가 submit버튼을 눌러 데이터를 제출하면, 폼 데이터는 <form>태그의 action 속성에 지정된 파일로 보내진다.
+form데이터를 처리하기 위해 이 **파일자신-> $_SERVER['PHP_SELF']**를 지정한다.
+  
+```
+<html>
+<body>
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
+name : <input type="text" name="fname">
+<input type="submit">
+</form>
+
+<?php
+  $name=$_POST['fname'];
+  echo $name;
+?>
+```
+
+### $_GET
+```
+<html>
+<body>
+<a href="test_get.php?subject=PHP&web=W3schools.com">Test$GET</a>
+
+<?php
+    echo "subject:".$_GET['subject']."  web : ".$_GET['web'];
+?>
+```
+
+
+
+## GET vs POST
+
