@@ -81,3 +81,12 @@ xss공격을 할 때 script코드입력을 막기 위해서 htmlspecialchars()�
 3. PHP의 **stripslashes()함수** 사용 - 사용자가 입력한 값중에 backslash(\\)를 제거한다.
 
 
+## validate name
+**preg_match()** 함수는 문자열에서 패턴을 검색해서 존재하면 true, 아니면 false를 반환
+패턴은 reqular expression으로 주어진다.
+
+# validate E-mail
+
+
+
+
